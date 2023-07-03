@@ -1,2 +1,2 @@
-Nội dung dầu tiên 
-Nội dung thứ 2 
+Console.Write("Trang");
+Console.WriteLine(2001);
