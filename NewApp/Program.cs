@@ -1,21 +1,52 @@
-﻿
-//BTVN : Xd chuong trinh cho phép người dùng nhập thông tin sv , điểm môn học rồi tính điểm trung bình các môn học 
- public class SinhVien
+﻿using NewApp .Models;
+public class Progarm
 {
-       public static void Main (string[] args )
-    {
-        System.Console.WriteLine("Nhap ten sinh vien:   ");
-        string Name = Console.ReadLine()!;
-        System.Console.WriteLine("Nhap ma so sinh vien:   ");
-        string ID = Console.ReadLine()!;
-            double a,b,c;
-            System.Console.Write("Điem Toan =  ");
-            a = Double.Parse(Console.ReadLine()!);
-            System.Console.Write("Điem Anh =  ");
-            b = Double.Parse(Console.ReadLine()!);
-            System.Console.Write("Diem Hóa =  ");
-            c = Double.Parse(Console.ReadLine()!);
-            double ĐTB = (a + b + c ) /3;
-            System.Console.WriteLine("Điem Trung Binh La = {0}",ĐTB);
+    private static void Main(string[] args) {
+        Student std = new Student ();
+        std.EnterData();
+        std.StudentCode = "1233456";
+        std.Display();
+        
     }
-}
+}   
+
+
+
+//using NewApp.Models;   
+   //GPT gpt = new GPT();
+   // gpt.GPTBac1();
+    //gpt.GPTBac2();
+
+    //Fruit fr = new Fruit();
+    //fr.InputFruit();
+    //fr.DisplayFr();
+
+    //Employee mpl = new Employee ();
+   //mpl.Input();
+   //mpl.Display();  
+//public class Progarm
+//{
+    //private static void Main(string[] args)
+    //{
+        //khoi tao 2 doi tuong 
+        //Person ps1 = new Person();
+        //Person ps2 = new Person();
+        //gan gia tri cho thuoc tinh ps1
+        //ps1.FullName = "Nguyen Van A";
+        //ps1.Address = "Ha Noi";
+        //ps1.Age = 18;
+        //goi phuong thuc hien thi thong tin
+        //ps1.Display();
+        //ps2.Display();
+        //Person ps = new Person ();
+        //string str = " Nguyen Van C";
+        //int a =22; 
+        //ps.Display2(str,a);
+        //Console.WriteLine("{0} sinh nam {1}", str , ps.GetYearOfBirth(a));
+       
+    //}
+    //private static void Main(string[] args) {
+        
+    //}
+
+//}
