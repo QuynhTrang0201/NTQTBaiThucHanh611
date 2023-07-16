@@ -19,13 +19,7 @@ namespace NewApp.Models
         //phat trien hien thi thong tin Studen 
         System.Console.Write("-Ma sinh vien : {0}", StudentCode);
     }
-    public void Mang()
-    {
-        System.Console.Write("Nhap so hoc sinh cua mot lop : ");
-        int n = Convert.ToInt32(Console.ReadLine());
         
-    }
-    
     }
 
   

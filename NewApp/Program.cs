@@ -6,7 +6,8 @@ public class Progarm
         std.EnterData();
         std.StudentCode = "1233456";
         std.Display();
-        
+       
+       
     }
 }   
 
