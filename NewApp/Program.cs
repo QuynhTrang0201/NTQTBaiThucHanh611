@@ -1,15 +1,41 @@
-﻿using NewApp .Models;
-public class Progarm
-{
-    private static void Main(string[] args) {
-        Student std = new Student ();
-        std.EnterData();
-        std.StudentCode = "1233456";
-        std.Display();
-       
-       
-    }
-}   
+﻿using System.Collections;
+using NewApp .Models;
+      ArrayList arrListPerson = new ArrayList();
+            int i = Convert.ToInt16((Console.ReadLine()));
+            for(i = 0; i<3; i++)
+                {
+                //Khai bao 1 doi tuong trong class Person 
+                Person ps = new Student();
+                //Nhap thong tin cho doi tương Person  
+                ps.EnterData();
+                //Add vao ArrayList
+                arrListPerson.Add(ps);
+                }
+            foreach(Person ps in arrListPerson)
+            {
+                ps.Display();
+            }
+      //Sua thong tin 
+            //Person ps1 = new Person ();
+            //ps1.EnterData();
+            //arrListPerson[1] =ps1;
+            //foreach (Person ps in arrListPerson)
+            //{
+                //ps.Display();
+            //}
+            int intIndex = -1;
+            while(intIndex < 0 || intIndex >= i)
+            {
+                System.Console.WriteLine("Nhap chi so cua phan tu muon sua: ");
+                intIndex = Convert.ToInt32(Console.ReadLine());
+            //khai bao mot phan tu Person moi 
+            Person psUpdate = new Person();
+            psUpdate.EnterData();
+            //Gan phan tu moi vao phan tu co index = intIndex
+            arrListPerson[intIndex] = psUpdate;
+            }
+    
+         
 
 
 
@@ -51,3 +77,5 @@ public class Progarm
     //}
 
 //}
+
+          

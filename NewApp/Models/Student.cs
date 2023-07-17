@@ -1,6 +1,7 @@
+using System.Collections;
 namespace NewApp.Models
 {
-    public class Student : Person
+    public class Student :Person
     {
         public string StudentCode {get;set;}
         public void EnterData()
@@ -19,8 +20,6 @@ namespace NewApp.Models
         //phat trien hien thi thong tin Studen 
         System.Console.Write("-Ma sinh vien : {0}", StudentCode);
     }
-        
     }
 
-  
     }
