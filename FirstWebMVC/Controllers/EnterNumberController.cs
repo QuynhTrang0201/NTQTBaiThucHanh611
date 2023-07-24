@@ -15,7 +15,7 @@ public class EnterNumberController : Controller
     public IActionResult Index (int Number)
     {
         int binhphuong = Number * Number ;
-        ViewBag.Message = "Binh phuong cua mot so " + Number + "la :" + binhphuong;
+        ViewBag.Message = "Binh phuong cua mot so " + Number + " la :" + binhphuong;
         return View();
 
     }
