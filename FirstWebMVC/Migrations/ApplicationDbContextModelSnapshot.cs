@@ -16,7 +16,25 @@ namespace FirstWebMVC.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.9");
 
-            modelBuilder.Entity("Net_Core.Models.Student", b =>
+            modelBuilder.Entity("FirstWebMVC.Models.Employee", b =>
+                {
+                    b.Property<string>("EmpID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("EmpName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("EmpID");
+
+                    b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("FirstWebMVC.Models.Student", b =>
                 {
                     b.Property<string>("StudentID")
                         .HasColumnType("TEXT");
